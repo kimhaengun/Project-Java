@@ -1,0 +1,12 @@
+package review;
+//stack과 지역변수
+public class Ex09 {
+	void add() { //함수 내부 = 중괄호 내부 ={} = stack이 오픈된다.
+		System.out.println("안녕");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package ch10;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+public class Event01 extends JFrame{
+	private JButton btn1;
+	private JLabel la1;
+	public Event01() {
+		setTitle("이벤트 01");
+		setSize(300, 400);
+		
+		
+		btn1 = new JButton("클릭");
+		la1 = new JLabel("클릭안됨");
+		
+		
+		setVisible(true); //생성자 가장 마지막에!! (그림을 그리는 메소드)
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Event01();
+	}
+
+}

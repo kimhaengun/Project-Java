@@ -1,0 +1,20 @@
+package jsonex;
+
+import com.google.gson.Gson;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+class Comment{
+	private int id;
+	private String text;
+}
+
+public class Json02 {
+	Comment cm = new Comment();
+	cm =
+}

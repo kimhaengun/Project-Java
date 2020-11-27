@@ -1,0 +1,14 @@
+package test;
+
+import javax.swing.JFrame;
+
+public class OpenChallenge10 extends JFrame {
+	public OpenChallenge10() {
+	
+	}
+	public static void main(String[] args) {
+	new OpenChallenge10();
+
+	}
+
+}

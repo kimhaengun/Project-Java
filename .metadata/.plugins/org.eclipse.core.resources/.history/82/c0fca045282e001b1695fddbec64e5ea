@@ -1,0 +1,43 @@
+package test;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class OpenChallenge10 extends JFrame {
+	private Container c;
+	private JLabel jl1, jl2, jl3, jl4;
+	private JPanel jp1, jp2;
+	
+	public OpenChallenge10() {
+	setTitle("Open Challenge 10");
+	setSize(500, 500);
+	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	
+	c = getContentPane();
+	jp1 = new JPanel();
+	jl1 = new JLabel("0");
+	jl2 = new JLabel("0");
+	jl3 = new JLabel("0");
+	jl4 = new JLabel("시작합니다.");
+	
+	jp1.add(jl1);
+	jp1.add(jl2);
+	jp1.add(jl3);
+	c.add(jp1, BorderLayout.CENTER);
+	
+	
+	
+	
+	setVisible(true);
+	}
+	public static void main(String[] args) {
+	new OpenChallenge10();
+
+	}
+
+}

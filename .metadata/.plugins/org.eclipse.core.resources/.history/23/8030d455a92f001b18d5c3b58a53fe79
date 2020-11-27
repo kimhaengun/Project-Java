@@ -1,0 +1,29 @@
+package ch11;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+
+import java.awt.Container;
+
+import javax.swing.JButton;
+
+public class JComponentEx extends Jf {
+private Container c;
+private JLabel latext;
+private JButton btn1, btn2;
+	public JComponentEx() {
+		setLayout(null);
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(196, 5, 57, 15);
+		add(lblNewLabel);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.setBounds(176, 59, 97, 23);
+		add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("New button");
+		btnNewButton_1.setBounds(176, 124, 97, 23);
+		add(btnNewButton_1);
+
+	}
+}

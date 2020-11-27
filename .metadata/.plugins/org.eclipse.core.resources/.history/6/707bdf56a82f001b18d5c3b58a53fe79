@@ -1,0 +1,37 @@
+package ch11;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+	public class JComponentEx extends JFrame {
+	private Container c;
+	private JLabel latext;
+	private JButton btn1, btn2;
+	public JComponentEx() {
+		c=getContentPane();
+		latext = new JLabel();
+		btn1 =new JButton();
+		btn2 = new JButton();
+		c.add(latext,BorderLayout.NORTH);
+		c.add(btn1,BorderLayout.CENTER);
+		c.add(btn2,BorderLayout.SOUTH);
+	
+		
+		
+	
+		
+	setTitle("Jcomponent¿« ∞¯≈Î...");
+	setSize(500, 500);
+	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	setVisible(true);
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new JComponentEx();
+	}
+
+}

@@ -1,0 +1,54 @@
+package ch09;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+import java.awt.Color;
+import java.awt.Container;
+
+import javax.swing.JLabel;
+
+
+public class Swing04 extends JFrame {
+	private JPanel pnorth, pcenter;
+	private JButton btnopen, btnread, btnclose;
+	private JLabel lajava, lahello, lalove;
+	private Container c;
+	
+	public Swing04() {
+		
+		pnorth = new JPanel();
+		pnorth.setForeground(Color.GRAY);
+		c.add(pnorth, BorderLayout.NORTH);
+		
+		btnopen = new JButton("Open");
+		pnorth.add(btnopen);
+		
+		btnread = new JButton("Read");
+		pnorth.add(btnread);
+		
+		btnclose = new JButton("Close");
+		pnorth.add(btnclose);
+		
+		pcenter = new JPanel();
+		c.add(pcenter, BorderLayout.CENTER);
+		pcenter.setLayout(null);
+		
+		lajava = new JLabel("Java");
+		lajava.setBounds(23, 161, 57, 15);
+		pcenter.add(lajava);
+		
+		lahello = new JLabel("Hello");
+		lahello.setBounds(155, 23, 57, 15);
+		pcenter.add(lahello);
+		
+		lalove = new JLabel("Love");
+		lalove.setBounds(300, 115, 57, 15);
+		pcenter.add(lalove);
+		
+	}
+	public static void main(String[] args) {
+		new Swing04();
+	}
+}

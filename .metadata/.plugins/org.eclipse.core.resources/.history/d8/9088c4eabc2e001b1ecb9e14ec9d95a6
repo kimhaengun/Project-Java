@@ -1,0 +1,17 @@
+package ch07;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Generic04 {
+	List<String> getData(){ 
+		//<?> = 들어올 값이 뭔지 모르기 때문에 타입을 미리 정하지않음
+		ArrayList<String> list = new ArrayList<>();
+		return new ArrayList<>();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

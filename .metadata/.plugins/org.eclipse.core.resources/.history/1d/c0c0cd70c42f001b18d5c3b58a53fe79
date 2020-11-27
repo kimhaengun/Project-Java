@@ -1,0 +1,47 @@
+package ch11;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Image632 extends JFrame {
+	private Container c;
+	private JLabel laimage;
+	private JButton jbleft, jbright;
+	private JPanel jp1;
+	public Image632() {
+		
+		c=getContentPane();
+		laimage = new JLabel();
+		
+		jp1 = new JPanel();
+		jp1.setLayout(new FlowLayout());
+		jbleft = new JButton("¿ÞÂÊ");
+		jbright = new JButton("¿À¸¥ÂÊ");
+		jp1.add(jbleft);
+		jp1.add(jbright);
+		
+		
+		
+		c.add(laimage,BorderLayout.CENTER);
+		c.add(jp1,BorderLayout.SOUTH);
+		
+		
+		
+		setTitle("Open Challenge 11");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400, 300);
+		setVisible(true);
+	
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Image632();
+	}
+
+}

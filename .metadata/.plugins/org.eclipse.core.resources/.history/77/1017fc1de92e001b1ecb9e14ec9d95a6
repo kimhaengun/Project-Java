@@ -1,0 +1,51 @@
+package ch13;
+
+import java.awt.Container;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+class MyThread extends Thread{
+	
+	@Override
+	public void run() {
+
+	}
+}
+public class TimerThreadEx extends JFrame {
+	private Container c;
+	private JLabel latext;
+	class MyThread extends Thread{
+		
+		@Override
+		public void run() {
+			for (int i = 1; i < 50; i++) {
+				try {
+					latext.setText(i+"");
+					Thread.sleep(2000);
+				} catch (Exception e) {
+					
+				}
+			}
+		}
+	}
+	public TimerThreadEx() {
+	c=getContentPane();
+	c.setLayout(null);
+	latext=new JLabel("GOGO");
+	latext.setLocation(100, 50);
+	latext.setSize(200, 100);
+	c.add(latext);
+	
+	setTitle("Thread를 상속받은 타이머 스레드");
+	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	setSize(300, 170);
+	Thread t1 = new Thread(new MyThread());
+	t1.start();
+	setVisible(true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new TimerThreadEx();
+	}
+
+}

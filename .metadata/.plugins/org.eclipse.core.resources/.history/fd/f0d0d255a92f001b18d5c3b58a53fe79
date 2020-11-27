@@ -1,0 +1,14 @@
+package ch11;
+
+import javax.swing.JPanel;
+
+public class JComponentEx extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public JComponentEx() {
+
+	}
+
+}

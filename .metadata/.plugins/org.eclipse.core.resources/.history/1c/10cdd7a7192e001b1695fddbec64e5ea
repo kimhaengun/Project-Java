@@ -1,0 +1,33 @@
+package test;
+
+import java.awt.Container;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class FlyingTextEx extends JFrame {
+	private final int FLYING_UNIT = 10;
+	private JLabel la;
+	private Container c;
+	public FlyingTextEx() {
+	
+		setTitle("11111");
+		setSize(500, 500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		c=getContentPane();
+		c.setLayout(null);
+		
+		la=new JLabel("움직인디");
+		la.locate(50, 50);
+		c.add(la);
+		
+		
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new FlyingTextEx();
+	}
+
+}

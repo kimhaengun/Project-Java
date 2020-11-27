@@ -1,0 +1,26 @@
+package client;
+
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class MyClientSocket {
+	private Socket socket;
+	
+	public MyClientSocket() {
+	try {
+		socket = new Socket("127.0.0.1",10000);
+	} catch (UnknownHostException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}	
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new MyClientSocket();
+	}
+
+}

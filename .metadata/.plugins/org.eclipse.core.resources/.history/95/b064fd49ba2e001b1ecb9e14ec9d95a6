@@ -1,0 +1,15 @@
+package ch07;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+public class Generic04 {
+	List<String> getData(){
+		ArrayList<String> list = new ArrayList<>();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

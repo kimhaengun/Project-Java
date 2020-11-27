@@ -1,0 +1,48 @@
+package ch13;
+
+import java.awt.Container;
+import java.time.LocalDateTime;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+
+public class Timer extends JFrame{
+	private Container c;
+	private JLabel latime;
+	
+	class MyThread implements Runnable{
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+		}
+	}
+	
+	public Timer() {
+		c = getContentPane();
+		latime = new JLabel();
+		
+		
+		
+		
+		
+		Thread t1 = new Thread(new MyThread());
+		t1.start();		
+		
+		setTitle("디지털 시계 만들기");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(500, 500);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println(now.getHour());
+		System.out.println(now.getMinute());
+		System.out.println(now.getSecond());
+		Timer t = new Timer();
+
+	}
+
+}

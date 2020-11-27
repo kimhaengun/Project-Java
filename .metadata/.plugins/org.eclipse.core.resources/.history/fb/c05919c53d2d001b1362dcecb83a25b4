@@ -1,0 +1,21 @@
+package ch09;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Swing01 extends JFrame{
+	public Swing01() {
+		setTitle("제목");
+		setSize(300,500);
+		setVisible(true); //화면을 표시하는 함수
+		setDefaultCloseOperation(false);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Swing01();
+		JPanel p = new JPanel();
+		
+	}
+
+}

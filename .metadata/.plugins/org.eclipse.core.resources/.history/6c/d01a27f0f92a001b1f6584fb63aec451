@@ -1,0 +1,8 @@
+package sms;
+
+public class Reponse {
+	String  group_id;
+	String error_list;
+	String success_count;
+	String error_count;
+}

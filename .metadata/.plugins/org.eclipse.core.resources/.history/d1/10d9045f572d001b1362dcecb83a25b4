@@ -1,0 +1,35 @@
+package ch09;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class OpenChallenge extends JFrame {
+	public OpenChallenge() {
+		setTitle("Open Challenge 9");
+		setSize(500, 500);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		Container c = getContentPane();
+		
+		JPanel p1 = new JPanel();
+		JButton btn1 = new JButton("Open");
+		JButton btn2 = new JButton("Read");
+		JButton btn3 = new JButton("Close");
+		p1.add(btn1);
+		p1.add(btn2);
+		p1.add(btn3);
+		c.add(p1,BorderLayout.NORTH);
+		
+		
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new OpenChallenge();
+	}
+
+}

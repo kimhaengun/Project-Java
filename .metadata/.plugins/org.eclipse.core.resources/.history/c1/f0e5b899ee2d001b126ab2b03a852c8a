@@ -1,0 +1,14 @@
+package sms;
+
+import javax.swing.JPanel;
+
+public class MyFrame extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public MyFrame() {
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package coffee;
+
+//고객
+//책임 : 메뉴를 주문
+public class Customer {
+	
+	public void order(Barista b1) {
+		b1.makeCoffee();
+	}
+}

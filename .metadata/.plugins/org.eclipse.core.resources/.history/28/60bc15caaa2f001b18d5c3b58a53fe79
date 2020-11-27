@@ -1,0 +1,42 @@
+package ch11;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Font;
+
+import javax.swing.JButton;
+
+public class JComponentEx extends JFrame {
+private Container c;
+private JButton btn1, btn2 ,btn3;
+	public JComponentEx() {
+		c = getContentPane();
+		c.setLayout(null);
+		
+		btn3 = new JButton("Magenta/Yellow Button");
+		btn3.setBounds(177, 22, 300, 50);
+		btn3.setBackground(Color.yellow);
+		btn3.setFont(new Font("Arial", Font.ITALIC, 20));
+		c.add(btn3);
+		
+		btn1 = new JButton("Disabled Button");
+		btn1.setBounds(159, 81, 97, 23);
+		btn1.setEnabled(false);
+		c.add(btn1);
+		
+		btn2 = new JButton("getX(), getY()");
+		btn2.setBounds(159, 149, 97, 23);
+		c.add(btn2);
+		setTitle("Jcomponent¿« ∞¯≈Î");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400, 400);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		new JComponentEx();
+	}
+}
